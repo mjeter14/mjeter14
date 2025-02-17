@@ -1,0 +1,17 @@
+# Ignore system files and unnecessary directories
+AppData/
+NTUSER.DAT
+NTUSER.DAT.LOG*
+$Recycle.Bin/
+System Volume Information/
+Thumbs.db
+Desktop.ini
+Favorites/
+Links/
+Music/
+My Documents/
+Downloads/
+node_modules/
+.firebase/
+.env
+firebase-debug.log
