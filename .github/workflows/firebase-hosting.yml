@@ -22,8 +22,7 @@ jobs:
 
       - name: Deploy to Firebase
         env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_DEPLOY_TOKEN: ${{ secrets.FIREBASE_DEPLOY_TOKEN }}
         run: |
-          echo "$FIREBASE_SERVICE_ACCOUNT" > $HOME/firebase-key.json
-          firebase use --add your-project-id
-          firebase deploy --only hosting
+          firebase use --add the-clean-credit-academy
+          firebase deploy --only hosting --token "$FIREBASE_DEPLOY_TOKEN"
